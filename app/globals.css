@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    :root {
+        --radius: 0.5rem;
+    }
+}
+
+@layer utilities {
+ 
+    .tag {
+        @apply  px-6 py-3  font-bold rounded-sm uppercase relative tag-tri;
+    }
+    .img{
+      @apply mx-auto mt-8;
+    }
+    .p{
+      @apply sm:text-[24px] sm:leading-[20px] text-[19px]  font-medium;
+    }
+    .heading {
+        @apply  bg-none px-6 py-3  font-bold text-black sm:text-[54px] sm:leading-[64px] text-[36px] leading-[46px] max-w-5xl text-center my-5;
+    }
+    .container {
+      @apply bg-[#FFEAFA] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto mt-8 px-8 py-4 grid gap-3 border-2 border-[#8A226F] rounded-sm rounded-[10px] ;
+    }
+    
+    .span{
+      @apply px-2 w-full font-medium text-[16px] text-black max-w-2xl  break-words;
+
+    }
+    .circle{
+      @apply mt-1 ;
+    }
+    
+      .btn1 {
+        @apply bg-[#8A226F] text-white font-medium py-2 px-4 rounded-sm hover:bg-[#6C1B6C] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto block text-center rounded-full mt-20  py-3 text-[19px];
+      }
+      .btn{
+        @apply bg-[#8A226F] text-white font-medium py-2 px-4 rounded-sm hover:bg-[#6C1B6C] w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl mx-auto block text-center rounded-full mt-20  py-3 text-[19px];
+      }
+      .bar{
+        @apply w-full h-1 bg-[#8A226F] rounded-sm bg-black;
+      }
+      .progress-container{
+        @apply w-full h-1 bg-[#8A226F] rounded-sm ;
+      }
+       
+    
+      .progress-bar{
+        @apply w-full h-1 bg-[#8A226F] rounded-sm  flex justify-between;
+      }
+      .cont{
+        @apply  w-full h-1 bg-[#8A226F] rounded-sm  flex justify-between;
+      }
+      .cont1{
+        @apply  w-full h-1 bg-[Lightgrey] rounded-sm  flex justify-between;
+      }
+      .cont2{
+        @apply  w-full h-1 bg-[Lightgrey] rounded-sm  flex justify-between;
+      }
+      .bars{
+        @apply flex  items-center p-4 gap-3 py-1;
+      }
+      .content{
+       @apply text-left text-[16px] mt-6 text-[grey] ;
+      }
+      .title{
+          @apply text-left text-[26px] -mt-3 ;
+      }
+      .pt{
+        @apply text-left;
+      }
+      .p1{
+        @apply font-[650] text-[17px];
+      }
+      ::placeholder{
+        @apply text-black;
+      }
+
+      .sp{
+        @apply text-[grey] ;
+      }
+
+      input{
+        @apply mt-5 grid  grid-cols-3  gap-3 py-2;
+      }
+     
+      
+    
+    
+   
+    
+
+    .pattern {
+        background-image: linear-gradient(
+                to right,
+                transparent 49.5%,
+                rgba(251, 232, 67, 0.2) 49.5%,
+                rgba(251, 232, 67, 0.6) 50.5%,
+                transparent 50.5%
+        );
+        background-size: 5% 100%;
+        background-position: center;
+        background-repeat: repeat-x;
+    }
+
+    .tag-tri {
+        @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+    }
+}
+
+.w-md-editor-toolbar {
+    padding: 10px !important;
+}
